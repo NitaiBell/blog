@@ -35,6 +35,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
+#fkfdnlknldf
 
 # Configure Tables
 class BlogPost(db.Model):
@@ -193,6 +194,7 @@ def about():
 def contact():
     return render_template("contact.html")
 
+print("hello")
 
 if __name__ == "__main__":
     app.run(debug=True, port=5002)
